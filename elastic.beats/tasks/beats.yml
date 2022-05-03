@@ -12,6 +12,7 @@
 # Configuration file for beats
 - name: Beats configuration
   include_tasks: beats-config.yml
+  include_tasks: beats-redhat.yml
 
 # Make sure the service is started, and restart if necessary
 - name: Start {{ beat_product }} service
